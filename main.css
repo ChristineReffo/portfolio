@@ -139,6 +139,8 @@ ul, li {
   margin-top: 0;
 }
 
+/* The Portfolio Section starts here */
+
 .portfolio {
   padding-top:10vh;
 }
@@ -147,24 +149,39 @@ ul, li {
   color:#7d97ad;
   font-size: 3.5vw;
   padding-bottom: 10vh;
+  margin-left: 40px;
+}
+
+figure {
+  margin-top: 0;
 }
 
 figure, .snippet_thumbnail {
   display: inline-block;
-  margin: 0 2 0 0;
-  padding-bottom: 4vh;
-  width:300px;
+  padding-bottom: 20px;
+  width: 300px;
   height: 250px;
-  border-radius: 25px 25px 25px 25px;
-  text-align:center;
+  border-radius: 0px;
+  margin-left: 40px;
 }
 
 .snippet__title, h3 {
   font-size: 2vw;
   text-transform:uppercase;
   text-emphasis-color: #02b3e4;
-  padding-top: 1em;
 }
+
+/* .box {
+    float: left;
+    width: 40%;
+    padding-right: 30px;
+    display: block;
+} */
+
+.box.project1project1_desc {
+  height: 300px;
+}
+
 
 
 /* Responsiveness */
@@ -174,7 +191,7 @@ figure, .snippet_thumbnail {
   flex-wrap:wrap;
 }
 
-
+/*
 @media screen and (max-width: 450px) {
 
   .box {
@@ -204,15 +221,21 @@ figure, .snippet_thumbnail {
   .snippet__title {
       text-align: center;
   }
-}
+} */
 
 @media screen and (min-width: 851px){
 
-  figure {
-    margin:0 30px 0 0;
+  figure, .project_desc {
     float: left;
-    width: calc((100% - 60px)/3);
     max-width:100%;
+  }
+
+  .project_img {
+    width:30%;
+  }
+
+  .project_desc {
+    width: 60%;
   }
 
   h2 {
@@ -226,4 +249,4 @@ figure, .snippet_thumbnail {
   .followSoon {
     margin-right: 0px;
   }
-}
+} */
