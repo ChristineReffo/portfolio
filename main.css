@@ -2,7 +2,7 @@ body, html {
   margin:0;
   padding:0;
   width:100%;
-  height:100%;
+  height:300%;
 }
 
 img, embed, object, video {
@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5 {
   margin:0;
 }
 
-header, main, section {
+nav, main, section {
   box-sizing: border-box;
 }
 
@@ -30,39 +30,15 @@ ul {
   margin:0;
 }
 
-.header {
-    box-shadow: 0 4px 0px rgba(0,0,0,0.26);
-    min-height: 20px;
-}
-
-.header__inner {
+.homepage {
+  height:100vh;
   width:100%;
-  margin-left: auto;
-  margin-right: auto;
 }
-
-.header__logo {
-  height: 6vw;
-  margin-left: 1vw;
-  display: inline;
-  float: left;
-  vertical-align: top;
-}
-
-.header__title {
-  font-weight: 300;
-  font-size: 4vw;
-  margin:0.5em 0.25em 0;
-  text-align: right;
-  color: #2d3c49;
-}
-
-.header_subtitle {
-  font-size: 2vw;
-  text-align: right;
-  margin: 0 0.5em 0;
-  text-transform:uppercase;
-  color:#2d3c49;
+.nav_menu {
+    /* box-shadow: 0 4px 0px rgba(0,0,0,0.26); */
+    min-height: 50px;
+    z-index: 100;
+    margin-top: 0;
 }
 
 .content {
@@ -72,15 +48,14 @@ ul {
 }
 
 
-.background_image {
-  width:100%;
-  position: relative;
-  opacity: 0.3;
-  display: inline-block;
-  margin-top: 2em;
-  text-align: center;
-  background-image: url("images/image_1.jpg")
+.background_wrap {
+  background-image: url("images/image_2.jpg");
   background-color: #cccccc;
+  background-position: center;
+  background-size: cover;
+  height:100%;
+  z-index: 0;
+  margin-top: 0;
 }
 
 .portfolio {
