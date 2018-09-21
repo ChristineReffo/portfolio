@@ -70,6 +70,8 @@ nav .nav_links {
 
 .sm_icon > a {
   color: white;
+  padding-left:10px;
+  padding-right:10px;
 }
 
 ul, li {
@@ -78,7 +80,8 @@ ul, li {
   display: inline-block;
   padding: 10px 5px;
   color: black;
-  font-size: 10px;
+  font-size: 24px;
+  margin: 0px;
   font-family: sans-serif;
   cursor: pointer;
 }
@@ -123,8 +126,6 @@ ul, li {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     transition-duration: 0.4s;
 }
-
-
 
 
 .background_wrap {
