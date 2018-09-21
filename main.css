@@ -25,6 +25,12 @@ h1 {
   text-transform: capitalize;
 }
 
+h2 {
+  font-size: 3.5vw;
+  padding: 10vh 0;
+  margin-left: 40px;
+}
+
 h4 {
   font-size: 2vw;
   text-transform: capitalize;
@@ -135,21 +141,49 @@ ul, li {
   background-size: cover;
   background-attachment: fixed;
   height:100%;
-  z-index: 0;
   margin-top: 0;
+}
+
+/* The About me Section starts here */
+
+.about {
+  height: 100%;
+  width:100%;
+}
+
+.about_wrap {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 30%;
+}
+
+.about_title {
+  color: white;
+}
+
+.about_background {
+  background-image: url("images/image_3.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* opacity: 0.5; */
+  height: 500px;
+  margin-top: 0;
+  width: 100%;
+}
+
+div.about_background p {
+  color: white;
+  text-align: center;
+  padding-top: 20%;
 }
 
 /* The Portfolio Section starts here */
 
 .portfolio {
   padding-top:10vh;
-}
-
-.portfolio_title {
-  color:#7d97ad;
-  font-size: 3.5vw;
-  padding-bottom: 10vh;
-  margin-left: 40px;
 }
 
 figure {
