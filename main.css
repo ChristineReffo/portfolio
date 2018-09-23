@@ -135,8 +135,8 @@ ul, li {
 
 
 .background_wrap {
-  background-image: url("images/image_2.jpg");
-  background-color: #cccccc;
+  /* background-image: url("images/image_5.jpg"); */
+  background-color: #E5BC00;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -163,13 +163,13 @@ ul, li {
 }
 
 .about_background {
-  background-image: url("images/image_3.jpg");
+  background-image: url("images/image_4.jpg");
   background-color: #cccccc;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   /* opacity: 0.5; */
-  height: 500px;
+  height: 700px;
   margin-top: 0;
   width: 100%;
 }
@@ -178,6 +178,18 @@ div.about_background p {
   color: white;
   text-align: center;
   padding-top: 10%;
+}
+
+.square{
+  display: inline-block;
+  float: left;
+  background-color: black;
+  padding-bottom: 20px;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 50px;
 }
 
 /* The Skills Section starts here */
@@ -199,22 +211,22 @@ div.skills_background p {
 }
 .html {
   width: 90%;
-  background-color: #D09683;
+  background-color: #E5BC00;
   height: 10px;
 }
 .css {
   width: 80%;
-  background-color: #D09683;
+  background-color: #E5BC00;
   height: 10px;
 }
 .js {
   width: 65%;
-  background-color:#D09683;
+  background-color: #E5BC00;
   height: 10px;
 }
 .react {
   width: 60%;
-  background-color: #D09683;
+  background-color: #E5BC00;
   height: 10px;
 }
 
