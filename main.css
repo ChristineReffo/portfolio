@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   font-size: 3.5vw;
-  padding: 10vh 0;
+  padding: 5vh 0 5vh 0;
   margin-left: 40px;
 }
 
@@ -53,7 +53,7 @@ nav, main, section {
     transition: 0.5s;
     z-index: 100;
     margin-top: 0;
-    background-color:#363237;
+    background-color:#303f4e;
     opacity: 0.9;
 }
 
@@ -66,12 +66,14 @@ nav .nav_links {
   cursor: pointer;
   padding: 18px 20px;
   margin: 10px;
+
 }
 
 .nav_links > a {
     padding-left:30px;
     padding-right:30px;
     color: white;
+    text-decoration: none;
   }
 
 .sm_icon > a {
@@ -101,10 +103,10 @@ ul, li {
   margin-left: auto;
 }
 
-.content .btn {
+.btn {
     display: inline-block;
     margin-top: 30px;
-    background-color: #D09683;
+    background-color:#ba315f;
     color: black;
     font-size: 16px;
     padding: 16px 30px;
@@ -119,14 +121,14 @@ ul, li {
 }
 .content .btn:last-child {
   margin-left: 20px;
-  border-color: #D09683;
+  border-color:#303f4e;
   background-color: transparent;
-  color: #D09683;
+  color:#303f4e;
 }
 
 .content .btn:hover {
-    background-color: #2D4262;
-    border-color: #2D4262;
+    background-color:#303f4e;
+    border-color:#303f4e;
     transform: scale(1.1);
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -136,12 +138,71 @@ ul, li {
 
 .background_wrap {
   /* background-image: url("images/image_5.jpg"); */
-  background-color: #E5BC00;
+  background-color: #eeca53;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   height:100%;
   margin-top: 0;
+}
+
+
+/* Scroll down arrow */
+.demo a {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  /* z-index: 2; */
+  display: inline-block;
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+#section07 a {
+  padding-top: 80px;
+}
+#section07 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+  animation: sdb07 2s infinite;
+  opacity: 0;
+}
+#section07 a span:nth-of-type(1) {
+  animation-delay: 0s;
+}
+#section07 a span:nth-of-type(2) {
+  top: 16px;
+  animation-delay: .15s;
+}
+#section07 a span:nth-of-type(3) {
+  top: 32px;
+  animation-delay: .3s;
+}
+
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* The About me Section starts here */
@@ -152,52 +213,34 @@ ul, li {
 }
 
 .about_wrap {
-  background-color: black;
-  margin: 0;
+  background-image: url("images/image_6.jpg");
+  background-color: #eeca53;
+  background-blend-mode: multiply;
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+  /* opacity: 0.1; */
+  /* height: 700px; */
+  margin-top: 0;
+  width: 100%;
+    margin: 0;
   padding: 0;
-  height: 30%;
+  height: 500px;
 }
 
 .about_title {
   color: white;
 }
 
-.about_background {
-  background-image: url("images/image_4.jpg");
-  background-color: #cccccc;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  /* opacity: 0.5; */
-  height: 700px;
-  margin-top: 0;
-  width: 100%;
-}
-
-div.about_background p {
+.about_text {
+  padding-left: 40px;
   color: white;
-  text-align: center;
-  padding-top: 10%;
 }
 
-.square{
-  display: inline-block;
-  float: left;
-  background-color: black;
-  padding-bottom: 20px;
-  width: 350px;
-  height: 250px;
-  border-radius: 5px;
-  margin-left: 20px;
-  margin-top: 50px;
-}
+/* Work and Education section here */
+
 
 /* The Skills Section starts here */
-
-div.skills_background p {
-  color: black;
-  text-align: center;
-}
 
 .skills {
   text-align: left;
@@ -211,22 +254,22 @@ div.skills_background p {
 }
 .html {
   width: 90%;
-  background-color: #E5BC00;
+  background-color: #eeca53;
   height: 10px;
 }
 .css {
   width: 80%;
-  background-color: #E5BC00;
+  background-color: #eeca53;
   height: 10px;
 }
 .js {
   width: 65%;
-  background-color: #E5BC00;
+  background-color: #eeca53;
   height: 10px;
 }
 .react {
   width: 60%;
-  background-color: #E5BC00;
+  background-color: #eeca53;
   height: 10px;
 }
 
@@ -267,37 +310,33 @@ div.skills_background p {
 /* The Portfolio Section starts here */
 
 
+
 figure {
   margin-top: 0;
 }
 
+.box {
+  width: 50%;
+}
 figure, .snippet_thumbnail {
   display: inline-block;
-  padding-bottom: 20px;
+  padding: 0 20px 20px 0;
   width: 300px;
   height: 250px;
   border-radius: 0px;
-  margin-left: 40px;
+  margin-right: 0px;
+
 }
 
 .snippet__title, h3 {
   font-size: 2vw;
   text-transform:uppercase;
-  text-emphasis-color: #02b3e4;
 }
 
-/* .box {
-    float: left;
-    width: 40%;
-    padding-right: 30px;
-    display: block;
-} */
-
-.box.project1project1_desc {
-  height: 300px;
+.project_desc {
+  float: left;
+  width:50%;
 }
-
-
 
 /* Responsiveness */
 
@@ -345,12 +384,12 @@ figure, .snippet_thumbnail {
     max-width:100%;
   }
 
-  .project_img {
+  /* .project_img {
     width:30%;
-  }
+  } */
 
   .project_desc {
-    width: 60%;
+    width: 30%;
   }
 
   h2 {

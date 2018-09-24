@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Cardo|Raleway" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="app.js"></script>
+
   </head>
   <body>
     <main>
@@ -15,8 +17,8 @@
           <nav class="navbar">
             <a class="logo" rel="index" href="#"></a>
             <nav class="nav_links">
-              <a class="home_link active" rel="index" href="#">Home</a>
-              <a class="home_link active" rel="about" href="#">About</a>
+              <a class="home_link" rel="index" href="#">Home</a>
+              <a class="home_link" rel="about" href="#">About</a>
               <a class="home_link active" rel="skills" href="#">Skills</a>
               <a class="home_link active" rel="portfolio" href="#">Portfolio</a>
               <a class="home_link active" rel="contact" href="#">Contact</a>
@@ -43,15 +45,9 @@
                 <button class="btn btn-imp btn-lg">Contact Me</button>
                 <button class="btn btn-info btn-lg">Learn More</button>
               </div>
-              <!-- <div class="lower_content">
-                  <div class="words_arrow">
-                    <h1>See what's below.</h1>
-                  </div>
-                  <div class="arrow bounce">
-                    <i class="fa fa-angle-down fa-5x" aria-hidden="true"</i>
-                  </div>
-              </div> -->
-              <div class="below"></div>
+              <section id="section07" class="demo">
+                <a href="#"><span></span><span></span><span></span>See what's here</a>
+              </section>
             </div>
           </div>
         </div>
@@ -63,83 +59,21 @@
     <section class="about">
         <div class="about_wrap">
           <h2 class="about_title">About me</h2>
-          <div class="about_background">
-            <div class="about_portrait">
-              <!-- <img src="images/image_4.jpg" /> -->
-            </div>
-            <div class="square">
-              <h4>
-                Front End Web Development
-              </h4>
-              <h6>Udacity</h6>
-              <p>
-              Recipient of Google Developer Challenge Scholarship
-              </p>
-              </div>
-            <div class="square">
-              <h4>
-                Digital Marketing and Business Models
-              </h4>
-              <h6>ETH</h6>
-              <p>
-              University courses: Human Interaction with Computer etc.
-              </p>
-              </div>
-            <div class="square">
-              <h4>
-                Search Engine Optimization
-              </h4>
-              <h6>Coursera</h6>
-              <p>
-              Courser cousera coursera coursera
-              </p>
-              </div>
-            <div class="square">
-              <h4>
-                Bachelor of Commerce in Finance with Honours
-              </h4>
-              <h6>University of British Columbia</h6>
-              <p>
-              Courser cousera coursera coursera
-              </p>
-              </div>
-            <div class="square">
-              <h4>
-                Exchange Program with focus on Psychology
-              </h4>
-              <h6>Hong Kong University</h6>
-              <p>
-              Courser cousera coursera coursera
-              </p>
-              </div>
-            <div class="square">
-              <h4>
-                International Baccalaureate
-              </h4>
-              <h6>Qatar Academy</h6>
-              <p>
-              Courser cousera coursera coursera
-              </p>
-              </div>
-            <div class="square">
-              <h4>
-                ITAS Selmi
-              </h4>
-              <h6>Qatar Academy</h6>
-              <p>
-              Courser cousera coursera coursera
-              </p>
-              </div>
-            <div class="square">
-              <h4>
-                Landschulheim Schloss Ising
-              </h4>
-              <h6>Qatar Academy</h6>
-              <p>
-              Courser cousera coursera coursera
-              </p>
-              </div>
-            </div>
+          <h4 class="about_text">
+            Hello, I am Christine. <br />
+            <br />
+            I am a front end web developer, entrepreneur and strategist, currently residing in Zurich, Switzerland. <br />
+            <br />
+            Welcome to my space - please stay and have a look around!
+          </h4>
+          <!-- <button class="btn">Contact me</button> -->
+        </div>
+    </section>
+
+<!-- The Work and Education Section starts here -->
+    <section class="work">
+        <div class="work_wrap">
+          <h2 class="work_title">Experience</h2>
         </div>
     </section>
 
@@ -148,9 +82,6 @@
         <div class="skills_wrap">
           <h2 class="skills_title">Skills</h2>
           <div class="skills_background">
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
         </div>
         <div class="skills_bars">
           <p>HTML</p>
@@ -191,93 +122,93 @@
         <div class="container">
 
     <!-- images are placeholders but code is structured for responsiveness already -->
-          <div class="wrap project">
-            <figure class="box project_img">
+          <div class="box project">
+            <figure class="project_img">
               <img  class="snippet_thumbnail"
                     src="images/Placeholder.png"
                     sizes="(max-width: 450px) 100vw, (min-width: 451px) 100vw"
                     srcset="images/Placeholder.png 450w, images/Placeholder.png 1280w"
                     alt="Placeholder"/>
             </figure>
-            <div class="box project_desc">
+            <div class="project_desc">
               <h3><a class="snippet_title">Neighbourhood Map</a></h3>
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
               </p>
             </div>
           </div>
-          <div class="wrap project2">
-            <figure class="box project_img">
+          <div class="box project">
+            <figure class="project_img">
               <img  class="snippet_thumbnail"
                     src="images/Placeholder.png"
                     sizes="(max-width: 450px) 100vw, (min-width: 451px) 100vw"
                     srcset="images/Placeholder.png 450w, images/Placeholder.png 1280w"
                     alt="Placeholder"/>
             </figure>
-            <div class="box project_desc">
+            <div class="project_desc">
               <h3><a class="snippet_title project2_title">Bookshelf</a></h3>
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
               </p>
             </div>
           </div>
-          <div class="wrap project3">
-            <figure class="box project_img">
+          <div class="box project">
+            <figure class="project_img">
               <img  class="snippet_thumbnail"
                     src="images/Placeholder.png"
                     sizes="(max-width: 450px) 100vw, (min-width: 451px) 100vw"
                     srcset="images/Placeholder.png 450w, images/Placeholder.png 1280w"
                     alt="Placeholder"/>
             </figure>
-            <div class="box project_desc">
+            <div class="project_desc">
               <h3><a class="snippet_title project3_title">Restaurant Single Page App</a></h3>
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
               </p>
             </div>
           </div>
-          <div class="wrap project3">
-            <figure class="box project_img">
+          <div class="box project">
+            <figure class="project_img">
               <img  class="snippet_thumbnail"
                     src="images/Placeholder.png"
                     sizes="(max-width: 450px) 100vw, (min-width: 451px) 100vw"
                     srcset="images/Placeholder.png 450w, images/Placeholder.png 1280w"
                     alt="Placeholder"/>
             </figure>
-            <div class="box project_desc">
+            <div class="project_desc">
               <h3><a class="snippet_title project3_title">Classic Arcade Game</a></h3>
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
               </p>
             </div>
           </div>
-          <div class="wrap project3">
-            <figure class="box project_img">
+          <div class="box project">
+            <figure class="project_img">
               <img  class="snippet_thumbnail"
                     src="images/Placeholder.png"
                     sizes="(max-width: 450px) 100vw, (min-width: 451px) 100vw"
                     srcset="images/Placeholder.png 450w, images/Placeholder.png 1280w"
                     alt="Placeholder"/>
             </figure>
-            <div class="box project_desc">
+            <div class="project_desc">
               <h3><a class="snippet_title project3_title">Memory Card Game</a></h3>
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
               </p>
             </div>
           </div>
-          <div class="wrap project3">
-            <figure class="box project_img">
+          <div class="box project">
+            <figure class="project_img">
               <img  class="snippet_thumbnail"
                     src="images/Placeholder.png"
                     sizes="(max-width: 450px) 100vw, (min-width: 451px) 100vw"
                     srcset="images/Placeholder.png 450w, images/Placeholder.png 1280w"
                     alt="Placeholder"/>
             </figure>
-            <div class="box project_desc">
+            <div class="project_desc">
               <h3><a class="snippet_title project3_title">Jasmine Feedreader Testing</a></h3>
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
               </p>
             </div>
           </div>
