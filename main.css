@@ -119,6 +119,33 @@ nav .nav_links {
   margin-right: auto;
 }
 
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+/* DEMO-SPECIFIC STYLES */
+.inner_tagline h1 {
+  color: #fff;
+  /* font-family: monospace; */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid #FF4C01; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .09em; /* Adjust as needed */
+  animation:
+    typing 5s steps(50, end),
+    blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FF4C01 }
+}
+
 .btn {
     display: inline-block;
     margin: 30px 0px 0px 0px;
@@ -217,7 +244,6 @@ nav .nav_links {
 }
 
 .about_wrap {
-  /* background-image: url("images/image_6.jpg"); */
   background-color: #03101A;
   background-blend-mode: multiply;
   background-position: right;

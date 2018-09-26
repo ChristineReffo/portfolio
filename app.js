@@ -1,12 +1,12 @@
 
 var i = 0;
-var txt = 'Lorem ipsum dummy text blabla.';
+var txt = 'Strategy.' + <br /> + 'Front End.' + <br /> + 'Entrepreneurship.';
 
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
   if (i < txt.length) {
-    document.getElementById("about_text").innerHTML += txt.charAt(i);
+    document.getElementsByClassName("inner_tagline").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
@@ -25,9 +25,8 @@ $(function() {
 
 
 // TODO:
-//
 // - Fade out scroll down arrow when scrolling
 // - Have navbar hidden at first, show slowly or on scrolling
-// - Use typewriter animation for title
+// - Use typewriter animation for title --> how to get it into three lines
 // - resize portfolio images
 //- in page anchors for url references
