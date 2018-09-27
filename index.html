@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css?family=Cardo|Raleway" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Lora" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 
@@ -12,22 +12,22 @@
   </head>
   <body>
     <main>
-      <section class="homepage">
-        <div class="background_wrap">
+      <section class="landingPage_wrap">
           <nav class="navbar">
-            <a class="logo" rel="index" href="#"></a>
+            <img class="logo_small" src="images/logo.png" />
+            <a rel="index" href="#"></a>
             <nav class="nav_links">
               <a class="home_link" rel="index" href="#">Home</a>
-              <a class="home_link" rel="about" href="#">About</a>
-              <a class="home_link active" rel="skills" href="#">Skills</a>
-              <a class="home_link active" rel="portfolio" href="#">Portfolio</a>
-              <a class="home_link active" rel="contact" href="#">Contact</a>
+              <a class="home_link" rel="about" href="#about">About</a>
+              <a class="home_link active" rel="skills" href="#skills">Skills</a>
+              <a class="home_link active" rel="portfolio" href="#portfolio">Portfolio</a>
+              <a class="home_link active" rel="contact" href="#contact">Contact</a>
             </nav>
             <ul class="social_media">
-              <li class="sm_icon">
+              <li class="sm_icon github">
                 <a href="https://github.com/ChristineReffo" class="fa fa-github-square" target="_blank"></a>
               </li>
-              <li class="sm_icon">
+              <li class="sm_icon email">
                 <a href="#" class="fa fa-envelope" target="_blank"></a>
               </li>
               <li class="sm_icon linkedin">
@@ -36,25 +36,27 @@
             </ul>
           </nav>
 
-          <div class="wrapper">
-            <div class="inner">
-              <div class="inner_tagline">
-                <h1>
-                  Strategy. Front End. Entrepreneurship. </h1>
-                <button class="btn btn-imp btn-lg">Work with me</button>
-              </div>
-              <section id="arrow" class="scroll_arrow">
-                <a href="#"><span></span><span></span><span></span>See what's here</a>
-              </section>
+          <section class="inner container">
+            <div class="inner_tagline">
+              <ul  class="box inner_keywords"><h1>
+                <li class="inner_keyword">Strategy.</li>
+                <li class="inner_keyword">Front End.</li>
+                <li class="inner_keyword">Entrepreneurship.</li>
+              </h1></ul>
+              <button class="btn btn-imp btn-lg">Work with me</button>
             </div>
-          </div>
-        </div>
+            <section id="arrow" class="scroll_arrow">
+              <a href="#"><span></span><span></span><span></span></a>
+            </section>
+        </section>
+      </section>
 
 
 
 <!-- The About Me Section starts here -->
 
     <section class="about">
+      <a name="about"></a>
         <div class="about_wrap">
           <h2 class="about_title">About me</h2>
           <ul class="about_text">
@@ -71,15 +73,9 @@
         </div>
     </section>
 
-<!-- The Work and Education Section starts here -->
-    <section class="work">
-        <div class="work_wrap">
-          <h2 class="work_title">Experience</h2>
-        </div>
-    </section>
-
 <!-- The Skills Section starts here -->
     <section class="skills">
+        <a name="skills"></a>
         <div class="skills_wrap">
           <h2 class="skills_title">Skills</h2>
           <div class="skills_background">
@@ -118,8 +114,10 @@
 
 
 <!-- The Portfolio Section starts here -->
-    <section class="portfolio">
-      <h2 class="portfolio_title">Featured Work</h2>
+
+    <section class="portfolio_wrap">
+        <a name="portfolio"></a>
+      <h2 class="portfolio_title">Project Portfolio</h2>
         <div class="container">
 
     <!-- images are placeholders but code is structured for responsiveness already -->
@@ -215,7 +213,13 @@
           </div>
         </div>
       </section>
-          </section>
+      <!-- The Footer section starts here -->
+      <section class="footer">
+        <div class="footer_wrap">
+          <span>Coded with <3 by Christine Reffo</span>
+          <span>Copyright 2018</span>
+        </div>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>

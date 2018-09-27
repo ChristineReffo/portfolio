@@ -10,25 +10,27 @@ img, embed, object, video {
 }
 
 body {
-  font-family: Raleway;
+  font-family: 'Cardo', serif;
   font-size: 14px;
+  color: whitesmoke;
 }
 
-h1, h2, h3, h4, h5, a {
-  font-family: Cardo;
+h1, h2, h3, h4, h5, a, button {
+  font-family: 'Lora', serif;
   margin:0;
 }
 
 h1 {
   font-size: 3.5vw;
   text-transform: uppercase;
-  color: rgb(116, 126, 130);
+  color: whitesmoke;
 }
 
 h2 {
   font-size: 3.5vw;
   padding: 5vh 0 5vh 0;
   margin-left: 40px;
+  color: whitesmoke;
 }
 
 h4 {
@@ -46,10 +48,14 @@ nav, main, section {
   box-sizing: border-box;
 }
 
-.homepage {
-  height:100vh;
-  width:100%;
+.landingPage_wrap {
+  background-color: #03101A;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0;
 }
+
+
 .navbar {
     width: 100%;
     position: fixed;
@@ -61,6 +67,13 @@ nav, main, section {
     margin-top: 0;
     background-color: #001070C;
     opacity: 0.9;
+}
+
+.logo_small {
+  width: 70px;
+  height: 50px;
+  float: left;
+  padding: 15px 0px 0px 10px;
 }
 
 nav .nav_links {
@@ -78,7 +91,7 @@ nav .nav_links {
     font-size: 18px;
     padding-left:30px;
     padding-right:30px;
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
   }
 
@@ -91,73 +104,62 @@ nav .nav_links {
 }
 
 .sm_icon > a {
-  color: white;
-  padding-left:10px;
-  padding-right:10px;
+  color: whitesmoke;
+  padding-left:20px;
+  padding-right:20px;
+  right: 40px;
+  float: right;
 }
 
-
-
-.social_media > li {
-  list-style-type: none;
-  float: right;
+ul.social_media {
+  width: 20%;
   display: inline-block;
-  padding: 10px 5px;
+  list-style: none;
+  margin-top: 30px;
+  right:40px;
+  float:right;
+}
+
+li.sm_icon {
   font-size: 24px;
   margin: 0px;
-  font-family: sans-serif;
   cursor: pointer;
 }
 
 .inner_tagline {
   text-align: left;
-  padding-top: 220px;
+  padding-top: 180px;
   padding-left: 40px;
   width: calc(100% - 40px);
-  height: 300px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* https://css-tricks.com/snippets/css/typewriter-effect/ */
-/* DEMO-SPECIFIC STYLES */
-.inner_tagline h1 {
-  color: #fff;
-  /* font-family: monospace; */
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid #FF4C01; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .09em; /* Adjust as needed */
-  animation:
-    typing 5s steps(50, end),
-    blink-caret 0.5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #FF4C01 }
-}
-
 .btn {
-    display: inline-block;
-    margin: 30px 0px 0px 0px;
-    background-color:#FF4C01;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 16px 30px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    }
+  display: inline-block;
+  margin: 30px 0px 0px 0px;
+  background-color:#FF4C01;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 16px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  padding: 0px;
+  width: 100%;
+}
+
+ul.inner_keywords {
+  padding: 0px;
+  width:40%;
+  margin: 0px;
+}
 
 .inner_tagline .btn:hover {
     background-color:#9E0143;
@@ -168,27 +170,25 @@ nav .nav_links {
     transition-duration: 0.4s;
 }
 
-.background_wrap {
-  /* background-image: url("images/image_5.jpg"); */
-  background-color: #03101A;
-  /* background-position: center;
-  background-size: cover;
-  background-attachment: fixed; */
-  width: 100%;
-  height:100%;
-  margin-top: 0;
+img.logo {
+  width: 280px;
+  padding-top: 300px;
+
+  padding-right: 100px;
+  float: right;
 }
+
+
+
 
 /* Scroll down arrow */
 .scroll_arrow a {
   position: absolute;
-  bottom: -10px;
-  left: 45%;
+  bottom: -50px;
+  left: 50%;
   display: inline-block;
   transform: translate(0, -50%);
   color: #fff;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;
 }
@@ -205,11 +205,10 @@ nav .nav_links {
   left: 50%;
   width: 24px;
   height: 24px;
-  margin-left: -12px;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
   transform: rotate(-45deg);
-  animation: sdb07 2s infinite;
+  animation: scroller 2s infinite;
   opacity: 0;
 }
 #arrow a span:nth-of-type(1) {
@@ -224,7 +223,7 @@ nav .nav_links {
   animation-delay: .3s;
 }
 
-@keyframes sdb07 {
+@keyframes scroller {
   0% {
     opacity: 0;
   }
@@ -239,8 +238,11 @@ nav .nav_links {
 /* The About me Section starts here */
 
 .about {
-  height: 100%;
+  height: 100vh;
   width:100%;
+  border-color: whitesmoke;
+  border-radius: 5px;
+
 }
 
 .about_wrap {
@@ -250,41 +252,40 @@ nav .nav_links {
   background-size: cover;
   background-attachment: fixed;
   /* opacity: 0.1; */
-  /* height: 700px; */
   margin-top: 0;
   width: 100%;
     margin: 0;
   padding: 0;
-  height: 500px;
-}
-
-.about_title {
-  color: rgb(116, 126, 130);
+  height: 100%;
 }
 
 ul.about_text {
   padding-left: 40px;
-  color: rgb(116, 126, 130);
   float: left;
   width: 300px;
 }
 
 li.about_text {
   list-style: none;
-    background-color: #039;
-    border-top: solid 1px #039;
-    text-align: left;
-    margin: 0;
+  background-color: #039;
+  border-top: solid 1px #039;
+  text-align: left;
+  margin: 0;
 }
 /* Work and Education section here */
 
 
 /* The Skills Section starts here */
 
+.skills_wrap {
+  height: 100vh;
+  background-color:#03101A;
+  border: none;
+}
+
 .skills {
   text-align: left;
   padding: 1px;
-  color: black;
 }
 
 .skills_bars {
@@ -293,22 +294,22 @@ li.about_text {
 }
 .html {
   width: 90%;
-  background-color: #03101A;
+  background-color: #FF4C01;
   height: 10px;
 }
 .css {
   width: 80%;
-  background-color: #03101A;
+  background-color: #FF4C01;
   height: 10px;
 }
 .js {
   width: 65%;
-  background-color: #03101A;
+  background-color: #FF4C01;
   height: 10px;
 }
 .react {
   width: 60%;
-  background-color: #03101A;
+  background-color: #FF4C01;
   height: 10px;
 }
 
@@ -346,9 +347,14 @@ li.about_text {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
 /* The Portfolio Section starts here */
 
 
+.portfolio_wrap {
+  height: 175vh;
+  background-color: #03101A
+}
 
 figure {
   margin-top: 0;
