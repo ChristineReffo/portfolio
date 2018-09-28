@@ -28,7 +28,7 @@ h1 {
 
 h2 {
   font-size: 3.5vw;
-  padding: 5vh 0 5vh 0;
+  padding: 5vh 0 7vh 0;
   margin-left: 40px;
   color: whitesmoke;
 }
@@ -96,7 +96,7 @@ nav .nav_links {
   }
 
 
-.nav_links >a:hover {
+a:hover {
   border-bottom: 2px solid #FF4C01;
   padding-bottom: 10px;
   transition-duration: 0.4s;
@@ -272,7 +272,6 @@ li.about_text {
   text-align: left;
   margin: 0;
 }
-/* Work and Education section here */
 
 
 /* The Skills Section starts here */
@@ -356,38 +355,49 @@ li.about_text {
   background-color: #03101A
 }
 
-figure {
-  margin-top: 0;
+div#gallery {
+  justify-content: center;
 }
 
-.box {
-  width: 50%;
-}
-figure, .snippet_thumbnail {
+.project_card {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
   display: inline-block;
-  padding: 0 20px 20px 0;
+  border-radius: 0%;
+  border: 2px solid #09BCAA;
   width: 300px;
   height: 250px;
-  border-radius: 0px;
   margin-right: 0px;
-
+  cursor:pointer;
 }
+
+.project_card .text_side {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity  2s linear;
+  background: #02b3e4;
+  cursor: default;
+}
+
 
 .snippet__title, h3 {
   font-size: 2vw;
   text-transform:uppercase;
 }
 
-.project_desc {
-  float: left;
-  width:50%;
-}
 
 /* Responsiveness */
 
 .container {
   display: flex;
   flex-wrap:wrap;
+}
+
+.box {
+  width:320px;
+  height: 270px;
+
 }
 
 /*
@@ -429,23 +439,4 @@ figure, .snippet_thumbnail {
     max-width:100%;
   }
 
-  /* .project_img {
-    width:30%;
-  } */
-
-  .project_desc {
-    width: 30%;
-  }
-
-  h2 {
-    size: 3vw;
-  }
-
-  h4 {
-    size: 2vw;
-  }
-
-  .followSoon {
-    margin-right: 0px;
-  }
 } */
