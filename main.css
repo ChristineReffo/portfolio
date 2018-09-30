@@ -25,11 +25,20 @@ h1 {
   font-size: 3.5vw;
   text-transform: uppercase;
   color: whitesmoke;
+  letter-spacing: 0.15em;
+  line-height: 1.8em;
+}
+
+h3 {
+  color: #FF4C01;
+  text-shadow: 0.5px 0.5px #C63B00;
+  font-size: 2vw;
+  letter-spacing: 0.1em;
 }
 
 h2 {
   font-size: 3.5vw;
-  padding: 5vh 0 2vh 0;
+  padding: 30vh 0 2vh 0;
   text-align: center;
   color: whitesmoke;
 }
@@ -66,8 +75,8 @@ nav, main, section {
     transition: 0.5s;
     z-index: 100;
     margin-top: 0;
-    background-color: #001070C;
-    opacity: 0.9;
+    background-color: #0B1E2C;
+    /* opacity: 0.9; */
 }
 
 .logo_small {
@@ -242,7 +251,7 @@ img.logo {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 110vh;
 }
 
 h2.about.title.white, h2.skills.title.white, h2.portfolio.title.white {
@@ -292,6 +301,43 @@ p.text.right {
 }
 
 
+div.skills.box-sm {
+  border-radius: 0%;
+  background-color: #183043;
+  opacity: 0.5;
+  /* border: 2px solid #09BCAA; */
+  width: calc((100% - 50px) / 6 );
+  justify-content: center;
+  height: 25vh;
+  cursor:pointer;
+  margin: 3vh 0 0 10px;
+}
+
+div.skills.box-sm:first-of-type {
+  margin-left: 0px;
+}
+
+div.container.lang {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10vh;
+}
+
+.container.lang.title {
+  width: 100vw;
+  color: #FF4C01;
+  text-shadow: 0.5px 0.5px #C63B00;
+}
+
+.skills.descr {
+  padding-top: 17vh;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+
 /* The Portfolio Section starts here */
 
 
@@ -326,62 +372,9 @@ div#gallery {
 }
 
 
-.snippet__title, h3 {
-  font-size: 2vw;
-  text-transform:uppercase;
-}
-
-
 /* Responsiveness */
 
 .container {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
-
-.box {
-  width:320px;
-  height: 270px;
-
-}
-
-/*
-@media screen and (max-width: 450px) {
-
-  .box {
-    width:100%;
-  }
-
-  .snippet_thumbnail {
-    padding-bottom: 2vh;
-  }
-
-  .snippet__title {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 451px) and (max-width: 850px){
-
-  .box {
-    width:40%;
-    margin-right: 4px;s
-  }
-
- .snippet__title {
-   font-size: 5vw;
- }
-
-  .snippet__title {
-      text-align: center;
-  }
-} */
-
-@media screen and (min-width: 851px){
-
-  figure, .project_desc {
-    float: left;
-    max-width:100%;
-  }
-
-} */
