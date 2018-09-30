@@ -11,8 +11,9 @@ img, embed, object, video {
 
 body {
   font-family: 'Cardo', serif;
-  font-size: 14px;
+  font-size: 1.6vw;
   color: whitesmoke;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, a, button {
@@ -28,8 +29,8 @@ h1 {
 
 h2 {
   font-size: 3.5vw;
-  padding: 5vh 0 7vh 0;
-  margin-left: 40px;
+  padding: 5vh 0 2vh 0;
+  text-align: center;
   color: whitesmoke;
 }
 
@@ -124,11 +125,12 @@ li.sm_icon {
   font-size: 24px;
   margin: 0px;
   cursor: pointer;
+  z-index: 100;
 }
 
 .inner_tagline {
   text-align: left;
-  padding-top: 180px;
+  padding-top: 280px;
   padding-left: 40px;
   width: calc(100% - 40px);
   height: 100%;
@@ -159,6 +161,7 @@ ul.inner_keywords {
   padding: 0px;
   width:40%;
   margin: 0px;
+  height: 40%;
 }
 
 .inner_tagline .btn:hover {
@@ -179,8 +182,6 @@ img.logo {
 }
 
 
-
-
 /* Scroll down arrow */
 .scroll_arrow a {
   position: absolute;
@@ -195,7 +196,6 @@ img.logo {
 .scroll_arrow a:hover {
   opacity: .5;
 }
-
 #arrow a {
   padding-top: 80px;
 }
@@ -222,7 +222,6 @@ img.logo {
   top: 32px;
   animation-delay: .3s;
 }
-
 @keyframes scroller {
   0% {
     opacity: 0;
@@ -237,120 +236,66 @@ img.logo {
 
 /* The About me Section starts here */
 
-.about {
-  height: 100vh;
-  width:100%;
-  border-color: whitesmoke;
-  border-radius: 5px;
-
-}
-
-.about_wrap {
+.about.wrap {
   background-color: #03101A;
-  background-blend-mode: multiply;
-  background-position: right;
-  background-size: cover;
-  background-attachment: fixed;
-  /* opacity: 0.1; */
   margin-top: 0;
   width: 100%;
-    margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-ul.about_text {
-  padding-left: 40px;
-  float: left;
-  width: 300px;
-}
-
-li.about_text {
-  list-style: none;
-  background-color: #039;
-  border-top: solid 1px #039;
-  text-align: left;
   margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
+h2.about.title.white, h2.skills.title.white, h2.portfolio.title.white {
+  border-bottom: white solid 1px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+p.caption.white {
+  font-family:'Cardo';
+  font-style: italic;
+  text-align: center;
+  padding: 30px 40px 10px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.8vw;
+  line-height: 1.6;
+}
+
+p.text.left {
+  padding: 35px 10px 35px 40px;
+  float: left;
+  text-align: right;
+  display: inline-block;
+  width: calc((100% - 130px) / 2);
+}
+p.text.right {
+  padding: 35px 40px 35px 10px;
+  float: right;
+  text-align: left;
+  display: inline-block;
+  width: calc((100% - 130px) / 2);
+}
+.about.btn-imp {
+  margin-left: calc((100% - 195px) / 2);
+}
 
 /* The Skills Section starts here */
 
-.skills_wrap {
+.skills.wrap {
   height: 100vh;
   background-color:#03101A;
   border: none;
 }
 
-.skills {
-  text-align: left;
-  padding: 1px;
-}
-
-.skills_bars {
-  margin-left: 40px;
-  width: 50%;
-}
-.html {
-  width: 90%;
-  background-color: #FF4C01;
-  height: 10px;
-}
-.css {
-  width: 80%;
-  background-color: #FF4C01;
-  height: 10px;
-}
-.js {
-  width: 65%;
-  background-color: #FF4C01;
-  height: 10px;
-}
-.react {
-  width: 60%;
-  background-color: #FF4C01;
-  height: 10px;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip .tooltiptext {
-    visibility: visible;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -60px;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    right: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
 
 /* The Portfolio Section starts here */
 
 
-.portfolio_wrap {
+.portfolio.wrap {
   height: 175vh;
   background-color: #03101A
 }

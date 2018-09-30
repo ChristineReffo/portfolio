@@ -19,14 +19,16 @@
             <nav class="nav_links">
               <a class="home_link" rel="index" href="#">Home</a>
               <a class="home_link" rel="about" href="#about">About</a>
-              <a class="home_link active" rel="skills" href="#skills">Skills</a>
-              <a class="home_link active" rel="portfolio" href="#portfolio">Portfolio</a>
-              <a class="home_link active" rel="contact" href="#contact">Contact</a>
+              <a class="home_link" rel="skills" href="#skills">Skills</a>
+              <a class="home_link" rel="portfolio" href="#portfolio">Portfolio</a>
+              <a class="home_link" rel="contact" href="#contact">Contact</a>
             </nav>
             <ul class="social_media">
-              <li class="sm_icon github">
+
+              <li class="sm_icon">
                 <a href="https://github.com/ChristineReffo" class="fa fa-github-square" target="_blank"></a>
-              </li>
+          </li>
+
               <li class="sm_icon email">
                 <a href="#" class="fa fa-envelope" target="_blank"></a>
               </li>
@@ -39,9 +41,9 @@
           <section class="inner container">
             <div class="inner_tagline">
               <ul  class="box inner_keywords"><h1>
-                <li class="inner_keyword">Strategy.</li>
-                <li class="inner_keyword">Front End.</li>
                 <li class="inner_keyword">Entrepreneurship.</li>
+                <li class="inner_keyword">Front End.</li>
+                <li class="inner_keyword">Strategy.</li>
               </h1></ul>
               <button class="btn btn-imp btn-lg">Work with me</button>
             </div>
@@ -51,73 +53,46 @@
         </section>
       </section>
 
+    <!-- The content starts here -->
 
+    <section class="content_section">
 
-<!-- The About Me Section starts here -->
+    <!-- The About Me Section starts here -->
 
-    <section class="about">
+      <section class="about">
       <a name="about"></a>
-        <div class="about_wrap">
-          <h2 class="about_title">About me</h2>
-          <ul class="about_text">
-              <li>
-                Name: Christine Reffo
-              </li>
-              <li>
-                Age: 29
-              </li>
-              <li>
-                Education: Bachelor of Commerce
-              </li>
-            </ul>
+        <div class="about wrap">
+          <h2 class="about title white">About me</h2>
+          <div class="about_text">
+            <p class="caption white">
+              Front end web development meets strategy. <br /> I help companies grow in digital markets.
+            </p>
+            <p class="text left">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+            </p>
+            <p class="text right">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+            </p>
+          </div>
+          <button class="about btn btn-imp">Work with me</button>
         </div>
     </section>
 
 <!-- The Skills Section starts here -->
     <section class="skills">
         <a name="skills"></a>
-        <div class="skills_wrap">
-          <h2 class="skills_title">Skills</h2>
-          <div class="skills_background">
+        <div class="skills wrap">
+          <h2 class="skills title white">Skills</h2>
         </div>
-        <div class="skills_bars">
-          <p>HTML</p>
-          <div class="container">
-            <div class="tooltip skills html">
-            <span class="tooltiptext">90%</span>
-            </div>
-          </div>
-
-          <p>CSS</p>
-          <div class="container">
-            <div class="tooltip skills css">
-            <span class="tooltiptext">80%</span>
-            </div>
-          </div>
-
-          <p>JavaScript</p>
-          <div class="container">
-            <div class="tooltip skills js">
-            <span class="tooltiptext">65%</span>
-            </div>
-          </div>
-
-          <p>React</p>
-          <div class="container">
-            <div class="tooltip skills react">
-            <span class="tooltiptext">60%</span>
-          </div>
-          </div>
-        </div>
-      </div>
     </section>
 
 
 <!-- The Portfolio Section starts here -->
 
-    <section class="portfolio_wrap">
+    <section class="portfolio">
         <a name="portfolio"></a>
-      <h2 class="portfolio_title">Project Portfolio</h2>
+        <div class="portfolio wrap">
+      <h2 class="portfolio title white">Project Portfolio</h2>
         <div id="gallery" class="container">
               <img class="project_card"
                    src="images/neighbourhood_map.jpg"
@@ -148,6 +123,7 @@
           <span>Copyright 2018</span>
         </div>
       </section>
+    </section>
     </main>
     <script src="app.js"></script>
   </body>
