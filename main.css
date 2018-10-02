@@ -43,6 +43,7 @@ h3 {
   letter-spacing: 0.1em;
   width: 100%;
   margin: 0px;
+  padding-bottom: 5vh;
 }
 
 h4 {
@@ -68,17 +69,15 @@ nav, main, section {
 }
 
 
-.navbar {
+#navbar {
     width: 100%;
+    opacity: 0;
     position: fixed;
-    /* padding: 10px; */
-    top: 0px;
-    text-align: center;
-    transition: 0.5s;
-    z-index: 100;
+    text-align: right;
+    transition-duration: 1.8s;
     margin-top: 0;
     background-color: #0B1E2C;
-    /* opacity: 0.9; */
+    z-index: 1000;
 }
 
 .logo_small {
@@ -89,10 +88,10 @@ nav, main, section {
 }
 
 nav .nav_links {
-  width:100%;
+  width: 70%;
   position:absolute;
   float: left;
-  text-align: center;
+  /* text-align: center; */
   display: block;
   cursor: pointer;
   padding: 18px 0px 18px 0px;
@@ -107,20 +106,11 @@ nav .nav_links {
     text-decoration: none;
   }
 
-
 a:hover {
   border-bottom: 2px solid #FF4C01;
   padding-bottom: 10px;
   transition-duration: 0.4s;
   color: #FF4C01 !important;
-}
-
-.sm_icon > a {
-  color: whitesmoke;
-  padding-left:20px;
-  padding-right:20px;
-  right: 40px;
-  float: right;
 }
 
 ul.social_media {
@@ -133,15 +123,24 @@ ul.social_media {
 }
 
 li.sm_icon {
-  font-size: 24px;
+  font-size: 26px;
   margin: 0px;
   cursor: pointer;
-  z-index: 100;
 }
+
+.sm_icon > a {
+  color: whitesmoke;
+  padding-left:20px;
+  padding-right:20px;
+  right: 40px;
+  float: right;
+  text-decoration: none;
+}
+
 
 .inner_tagline {
   text-align: left;
-  padding-top: 280px;
+  padding-top: 30vh;
   padding-left: 40px;
   width: calc(100% - 40px);
   height: 100%;
@@ -194,6 +193,10 @@ img.logo {
 
 
 /* Scroll down arrow */
+#arrow {
+  transition-duration: 2s;
+}
+
 .scroll_arrow a {
   position: absolute;
   bottom: -50px;
@@ -358,7 +361,7 @@ ul.biz.list {
   padding: 0;
   display:inline-block;
   margin-top: 4.5vh;
-  position: absolute;
+  /* position: absolute; */
 }
 
 li.biz.item {
@@ -366,6 +369,10 @@ li.biz.item {
   font-size: 2vw;
   letter-spacing: 1.6px;
 }
+li.biz.item:first-of-type {
+  margin-top: 0;
+}
+
 
 i.fas.fa-star, i.fas.fa-star-half-alt,  i.far.fa-star {
     font-size: 16px;
@@ -431,6 +438,14 @@ div#gallery {
   transition: visibility 0s 2s, opacity  2s linear;
   background: #02b3e4;
   cursor: default;
+}
+
+.footer.wrap {
+  height: 6vh;
+  background-color: #0B1E2C;
+  text-align: center;
+  padding-top: 4vh;
+  font-size: 15px;
 }
 
 
