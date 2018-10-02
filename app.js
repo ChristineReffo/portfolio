@@ -5,6 +5,7 @@
 window.onscroll = function () {
   scrollFunction();
   arrowFade();
+  homeButtonFadeIn();
 };
 
 function scrollFunction() {
@@ -23,6 +24,17 @@ function arrowFade() {
     document.getElementById("arrow").style.opacity = "1";
   }
 }
+
+function homeButtonFadeIn() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("home_float").style.opacity = "1";
+  }
+   else {
+    document.getElementById("home_float").style.opacity = "0";
+  }
+}
+
+
 
 
 
